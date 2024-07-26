@@ -24,7 +24,6 @@ public class ItemController {
     String list(Model model) {
         List<Item> result = itemRepository.findAll();
         model.addAttribute("items", result);
-
         return "list.html";
     }
 
